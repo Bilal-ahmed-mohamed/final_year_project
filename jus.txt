@@ -1,0 +1,47 @@
+import pandas as pd
+import numpy as np
+import re
+import warnings
+import string
+import pickle
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# NLTK imports for text processing
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.stem import WordNetLemmatizer
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+# TextBlob for sentiment analysis
+from textblob import TextBlob
+
+# TensorFlow/Keras for deep learning model
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout
+
+# SpaCy for additional NLP tasks (if needed)
+import spacy
+
+# Scikit-learn imports
+from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder, StandardScaler, MinMaxScaler
+from sklearn.impute import SimpleImputer
+from sklearn.ensemble import RandomForestClassifier, VotingClassifier  # Added VotingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.feature_selection import SelectFromModel
+
+from sentence_transformers import SentenceTransformer
+from xgboost import XGBClassifier
+
+# Deep learning imports
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, LSTM, Dropout
+
+from collections import Counter

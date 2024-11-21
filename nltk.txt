@@ -1,0 +1,10 @@
+
+# Suppress warnings if necessary
+warnings.filterwarnings('ignore')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet', download_dir='/contentnltk_data/')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('vader_lexicon')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
